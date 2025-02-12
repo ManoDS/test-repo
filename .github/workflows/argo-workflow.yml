@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened] # Trigger on PR open or update
 
 jobs:
-  update-status:
+  init:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
