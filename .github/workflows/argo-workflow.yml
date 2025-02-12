@@ -20,6 +20,6 @@ jobs:
             -d '{
               "state": "pending",
               "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
-              "description": "Checks are running...",
+              "description": "Initializing...",
               "context": "argo-workflow"
             }'
