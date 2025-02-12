@@ -19,7 +19,7 @@ jobs:
             "https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.event.pull_request.head.sha }}" \
             -d '{
               "state": "pending",
-              "target_url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+              "target_url": "http://127.0.0.1:2746/workflows/argo-events",
               "description": "Initializing...",
               "context": "argo-workflow"
             }'
